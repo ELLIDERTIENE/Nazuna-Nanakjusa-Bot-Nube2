@@ -60,5 +60,5 @@ async def on_message(message):
 
 
 # Lee el token de forma segura desde la nube (sin exponerlo en el código)
-TOKEN = os.getenv('MTU2ODQ1MDM0OTI4OTcwMTQzNg.Gpjn2U.nz2IB2EnmRRwiuEJOC8csSC3XYcqG_gRsuMmCA')
+TOKEN = os.getenv('DISCORD_TOKEN')
 client.run(TOKEN)
