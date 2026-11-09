@@ -10,7 +10,7 @@ app = Flask('')
 
 @app.route('/')
 def home():
-  return '¡El bot de Discord está vivo y funcionando 24/7!'
+  return '¡Nazuna está viva y funcionando 24/7!'
 
 
 def run_flask():
@@ -37,10 +37,10 @@ async def on_ready():
 @client.event
 async def on_member_join(member):
   for channel in member.guild.text_channels:
-    if channel.name == '⟦🌕⟧𝙂𝙚𝙣𝙚𝙧𝙖𝙡':
+    if channel.name == '⟦☃️🌕🎄⟧𝐆𝐞𝐧𝐞𝐫𝐚𝐥-𝐍𝐢𝐠𝐡𝐭':
       await channel.send(
-          f'¡Hola {member.mention}, bienvenid@ a **{member.guild.name}**! Espero'
-          ' que pases una noche inolvidable con nosotros :)'
+          f'¡Hola {member.mention}, Bienvenid@ a **{member.guild.name}**! Espero'
+          ' que pases una noche inolvidable y una feliz navidad con nosotros :)'
       )
       break
 
